@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image(r"C:\Users\Gopal Sharma\OneDrive\Desktop\project 2\Fake Face Detection\Home page.png",width=4, use_container_width=True)
+    st.image(r"C:\Users\Gopal Sharma\Desktop\project 2\Fake Face Detection\Testing\Home page.png",width=4, use_container_width=True)
 
 with col2:
     st.markdown("## Fake Face Detection System 🧠🕵️‍♂️")
@@ -51,7 +51,7 @@ st.markdown(
 # ---------------- MODEL PREDICTION FUNCTION ----------------
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("Trained_model.keras")
+    return tf.keras.models.load_model(r"C:\Users\Gopal Sharma\Desktop\project 2\Fake Face Detection\Trained_model.keras")
 
 model = load_model()
 
